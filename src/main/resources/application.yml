@@ -1,0 +1,12 @@
+spring:
+  graphql:
+    graphiql:
+      enabled: true
+      path: /graphiql
+  data:
+    mongodb:
+      database: ${DATABASE_NAME:8081}
+      host: ${MONGO_CONTAINER_NAME:localhost}
+      port: ${MONGO_PORT:27017}
+server:
+  port: ${APP_PORT:8080}

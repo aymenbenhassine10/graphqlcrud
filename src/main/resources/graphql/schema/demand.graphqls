@@ -1,0 +1,5 @@
+type Demand {
+    id: String!
+    description :String!
+    product : Product!
+}

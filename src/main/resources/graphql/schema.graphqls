@@ -1,0 +1,25 @@
+type Query {
+    bookById(id: ID): Book
+    getBooks: [Book]!
+
+#    Product Queries
+    getAllProducts:[Product]!
+    getProductById(id: String): Product
+
+#    Demand Queries
+    getAllDemands:[Demand]!
+    getDemandById(id: String): Demand
+}
+
+type Book {
+    id: ID
+    name: String
+    pageCount: Int
+    author: Author
+}
+
+type Author {
+    id: ID
+    firstName: String
+    lastName: String
+}

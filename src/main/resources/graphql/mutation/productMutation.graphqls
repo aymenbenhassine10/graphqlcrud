@@ -1,0 +1,9 @@
+type Mutation {
+    addProduct(name :String, quantity: Int, price: Float): Product
+    updateProduct(id: String, name :String, quantity: Int, price: Float): Product
+    deleteProduct(id: String): Product
+#    Demand Mutations
+    addDemand(description: String, productId: String): Demand
+    updateDemand(id: String, description: String, productId: String): Demand
+    deleteDemand(id: String): Demand
+}
